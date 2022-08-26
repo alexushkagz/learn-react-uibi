@@ -2,6 +2,7 @@ version: "3.9"  # optional since v1.27.0
 services:
   myReactApp:
     image: react-app
+    # command: "npm install && nmp start"
     ports:
       - "3000:3000"
     volumes:
