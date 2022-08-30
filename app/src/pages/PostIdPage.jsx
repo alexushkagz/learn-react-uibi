@@ -35,7 +35,7 @@ const PostIdPage = () => {
                 ? <Loader/>
                 : <div style={{marginTop: 15}}>
                     {comments.map(comment => 
-                        <div>
+                        <div key={comment.id}>
                             <h5>{comment.email}</h5>
                             <dir>{comment.body}</dir>
                         </div>   
